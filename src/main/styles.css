@@ -4,6 +4,9 @@ body{
   background: #EFF1F7;
   margin: 0;
 }
+ul li a.active-page {
+  color: black;
+}
 .content {
   grid-area: content;
   background: url(../img/shape.png);
@@ -17,6 +20,8 @@ body{
 .footer{
   grid-area: footer;
   background:white;
+  display: flex;
+  justify-content: center;
 }
 .container {
   font-size: 1.5em;
@@ -30,6 +35,7 @@ body{
   grid-template-columns: 1fr;
   grid-template-rows: 130px 800px 250px;
 }
+
 .content,
 .sidebar,
 .footer{
@@ -61,6 +67,13 @@ nav li a:hover {
   margin: 0 auto;
   text-align: center;
 }
+
+.hero-projects {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .hero img {
   width: 200px;
 }
@@ -68,6 +81,34 @@ nav li a:hover {
   font-size: 2em;
   font-weight: 300;
   color: #373d46;
+}
+
+.hero-projects h1 {
+  font-size: 2em;
+  font-weight: 300;
+  color: #373d46;
+}
+.hero-projects h2 {
+  font-size: 1em;
+  font-weight: 300;
+  color: #373d46;
+}
+
+.hero-projects h3 {
+  font-size: .8em;
+  font-weight: 300;
+  color: #373d46;
+}
+
+.hero-projects h4 {
+  font-size: .5em;
+  font-weight: 300;
+  color: #373d46;
+}
+.hero-projects p {
+  font-weight: 300;
+  line-height: 1.2em;
+  color: #98a0ad;
 }
 .hero p {
   font-weight: 300;
@@ -136,6 +177,7 @@ footer p {
     text-align: left;
     margin: 2em auto;
   }
+
   .hero img{
     width: 250px;
     float: right;
@@ -146,12 +188,34 @@ footer p {
   .hero p {
     width: 60%;
   }
+
+  .hero-projects {
+    text-align: left;
+    margin: 2em auto;
+  }
+
+  .hero-projects h1{
+    font-size: 3em;
+  }
+
+  .hero-projects p {
+    width: 60%;
+  }
+
+  .hero-projects h3 {
+    font-size: .8em;
+  }
+
+  .hero-projects h4 {
+    font-size: .5em;
+  }
+
   footer ul {
     max-width: 960px;
     margin: 0 auto;
     padding: 2em 0;
   }
   svg {
-    width: 30%;
+    width: 60%;
   }
 }
