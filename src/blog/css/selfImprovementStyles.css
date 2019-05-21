@@ -1,61 +1,49 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:800|Poppins:500');
+.pg {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 19px;
+  line-height: 33px;
+  position: relative;
+  text-align: left;
 
+}
 
-html, body {
-  margin: 0;
-  padding: 0;
+.inTextLink {
+  color: black;
+}
+.inTextHeading {
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+}
+.Heading {
+  font-family: 'Arvo', serif;
+  font-size: 40px;
+}
+#text {
+  width: 65%;
+  display: inline-block;
+}
+body {
+  margin: 0 auto;
+  width: 100%;
   height: 100%;
+}
+#Tags {
+  background-color: grey;
+  color: white;
   width: 100%;
 }
 
-.landing {
-  height: 100%;
-  width: 100%;
-  margin: auto;
-  background: url(img/background.jpg) no-repeat 50% 50%;
-  background-size: cover;
-  display: table;
-  top: 0;
-}
-
-.landing .inner {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  padding-bottom: 20%;
-  padding-right: 3%;
-}
-
-.content h1 {
-  font-family: 'Open Sans', sans-serif;
-  color: #000000;
-  font-size: 550%;
-  text-shadow: 3px 3px 	#B9B9B9;
-}
-
-.btn {
-  font-size: 150%;
-  font-family: 'Poppins', sans-serif;
+#tags{
   text-decoration: none;
   color: white;
-  background-color: black;
-  border: 2px solid grey;
-  padding: 10px 20px;
-  border-radius: 5px;
 }
-
-.btn:hover {
-  color: #B9B9B9;
-  border: 2px solid 	#B9B9B9;
+/* Posts */
+#firstPost {
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 15%;
+  margin-right: 15%;
 }
-p {
-  font-family: sans-serif;
-  font-size: 120%;
-  line-height: 190%;
-  text-align: justify;
-  margin: 3%;
-}
-
 /* News-newsletter */
 #newsletterForm {
   margin: 0 auto;
@@ -132,13 +120,15 @@ p {
 }
 
 @media (max-width: 768px){
-  #selfImprovementImg {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 5%;
-    margin-top: 5%;
-  }
 
+  #text {
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .pg {
+    font-size: 15px;
+  }
   p {
     font-size: 100%;
     line-height: 160%;
